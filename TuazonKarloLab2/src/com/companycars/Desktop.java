@@ -1,19 +1,19 @@
  package com.companycars;
 
-public class Truck extends Vehicle{
-private int capacity;
-private int legalnum;
+public class Desktop extends Computer{
+private int size;
+private int wattage;
 
-public Truck(String name, String engineType, int wheels, String platform, int capacity, int legalnum) {
-super(name, engineType, wheels, platform);
-this.capacity = capacity;
-this.legalnum = legalnum;
+public Desktop(String name, String gpu, int ram, String cpu, int size, int wattage) {
+	super(name,gpu,ram, cpu);
+	this.size = size;
+	this.wattage = wattage;
 }
 public void print() {
-	System.out.println("Private Buisness Vehicle: ");
+	System.out.println("Desktop: ");
 	super.print();
-	System.out.println("Full Capacity: "+ capacity +"kg");
-	System.out.println("Vin num (legal): " + legalnum);
+	System.out.println("Volume Size: "+ size +"Liters");
+	System.out.println("Wattage rated: " + wattage);
 	
 }
 }

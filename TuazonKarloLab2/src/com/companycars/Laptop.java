@@ -1,16 +1,16 @@
 package com.companycars;
 
-public class Car extends Vehicle{
+public class Laptop extends Computer{
 
 	
 	
-	public  Car(String name,String engineType, int wheels, String platform) {
-		super(name,engineType, wheels, platform);
+	public  Laptop(String name, String gpu, int ram, String cpu) {
+		super(name,gpu,ram, cpu);
 	}
 
 
 	public void print() {
-		System.out.println("Private Vehicle Details :");
+		System.out.println("Laptop:");
 		super.print();
 	}
  

@@ -1,17 +1,17 @@
 package com.companycars;
 
-public class Vehicle {
+public class Computer {
 		private String name;
-		private String engineType;
-		private int wheels;
-		private String platform;
+		private String gpu;
+		private int ram;
+		private String cpu;
 
 		
-		public Vehicle(String name, String engineType, int wheels, String platform){
+		public Computer(String name, String gpu, int ram, String cpu){
 			this.name = name;
-			this.engineType = engineType;
-			this.wheels = wheels;
-			this.platform = platform;
+			this.gpu = gpu;
+			this.ram = ram;
+			this.cpu = cpu;
 				}
 			
 		
@@ -19,25 +19,25 @@ public class Vehicle {
 			return this.name;
 		}
 		
-		public String getEngine() {
-			return this.engineType;
+		public String getGpu() {
+			return this.gpu;
 		}
 		
-		public int getWheels() {
-			return this.wheels;
+		public int getRam() {
+			return this.ram;
 		}
 		
-		public String getPlatform() {
-			return this.platform;
+		public String getCpu() {
+			return this.cpu;
 		}
 
 		
 		
 		public void print() {
-			System.out.println("Vehicle: "+ getName());
-			System.out.println("Engine Type: "+ getEngine());
-			System.out.println("Wheel Config: "+ getWheels());
-			System.out.println("Platform Config: "+ getPlatform());
+			System.out.println("Device: "+ getName());
+			System.out.println("GPU: "+ getGpu());
+			System.out.println("Ram: "+ getRam());
+			System.out.println("CPU: "+ getCpu());
 			
 		}
 		
